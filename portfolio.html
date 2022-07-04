@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo header__logo link" href="index.html" lang="en"
+            >Web<span class="logo-accent-hdr">Studio</span></a
+          >
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header> -->
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="button-list">Список кнопок</h1>
+          <ul class="list random">
+            <li class="buttons__item">
+              <button class="button-one pointer" type="button">
+                <span class="button-txt">Все</span>
+              </button>
+            </li>
+            <li class="buttons__item">
+              <button class="button-two pointer" type="button">
+                <span class="button-txt">Веб-сайты</span>
+              </button>
+            </li>
+            <li class="buttons__item">
+              <button class="button-three pointer" type="button">
+                <span class="button-txt">Приложения</span>
+              </button>
+            </li>
+            <li class="buttons__item">
+              <button class="button-four pointer" type="button">
+                <span class="button-txt">Дизайн</span>
+              </button>
+            </li>
+            <li class="buttons__item">
+              <button class="button-five pointer" type="button">
+                <span class="button-txt">Маркетинг</span>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="card__list list">
+            <li class="card__item link">
+              <a class="card link" href="">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img8.jpg         1x,
+                        ./images/img8-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img8-tabl-x1.jpg 1x,
+                        ./images/img8-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img8-mob-x1.jpg 1x,
+                        ./images/img8-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img8.jpg"
+                      alt="фото технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 class="card__name">Технокряк</h2>
+                  <p class="card__sphere">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item link">
+              <a href="" class="card link">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img9.jpg         1x,
+                        ./images/img9-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img9-tabl-x1.jpg 1x,
+                        ./images/img9-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img9-mob-x1.jpg 1x,
+                        ./images/img9-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img9.jpg"
+                      alt="фото постер басткетболисты"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 lang="en" class="card__name">
+                    Poster New Orlean vs Golden Star
+                  </h2>
+                  <p class="card__sphere">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item link">
+              <a href="" class="card link">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img10.jpg         1x,
+                        ./images/img10-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img10-tabl-x1.jpg 1x,
+                        ./images/img10-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img10-mob-x1.jpg 1x,
+                        ./images/img10-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img10.jpg"
+                      alt="фото морской ресторан"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 lang="en" class="card__name">Restaurant Seafood</h2>
+                  <p class="card__sphere">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item link">
+              <a href="" class="card link">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img11.jpg         1x,
+                        ./images/img11-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img11-tabl-x1.jpg 1x,
+                        ./images/img11-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img11-mob-x1.jpg 1x,
+                        ./images/img11-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img11.jpg"
+                      alt="фото проект прайм"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 lang="en" class="card__name">Project Prime</h2>
+                  <p class="card__sphere">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item link">
+              <a href="" class="card link">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img12.jpg         1x,
+                        ./images/img12-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img12-tabl-x1.jpg 1x,
+                        ./images/img12-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img12-mob-x1.jpg 1x,
+                        ./images/img12-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img12.jpg"
+                      alt="фото проект коробки"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 lang="en" class="card__name">Project Boxes</h2>
+                  <p class="card__sphere">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item link">
+              <a href="" class="card link">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img13.jpg         1x,
+                        ./images/img13-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img13-tabl-x1.jpg 1x,
+                        ./images/img13-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img13-mob-x1.jpg 1x,
+                        ./images/img13-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img13.jpg"
+                      alt="фото монитор"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 lang="en" class="card__name">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="card__sphere">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item link">
+              <a href="" class="card link">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img14.jpg         1x,
+                        ./images/img14-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img14-tabl-x1.jpg 1x,
+                        ./images/img14-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img14-mob-x1.jpg 1x,
+                        ./images/img14-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img14.jpg"
+                      alt="фото ограниченное издание"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 lang="en" class="card__name">
+                    Publication Limited Edition
+                  </h2>
+                  <p class="card__sphere">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item link">
+              <a href="" class="card link">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img15.jpg         1x,
+                        ./images/img15-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img15-tabl-x1.jpg 1x,
+                        ./images/img15-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img15-mob-x1.jpg 1x,
+                        ./images/img15-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img15.jpg"
+                      alt="фото проект лаб"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 lang="en" class="card__name">Project LAB</h2>
+                  <p class="card__sphere">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card__item link">
+              <a href="" class="card link">
+                <div class="card__img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/img16.jpg         1x,
+                        ./images/img16-desk-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img16-tabl-x1.jpg 1x,
+                        ./images/img16-tabl-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img16-mob-x1.jpg 1x,
+                        ./images/img16-mob-x2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/img16.jpg"
+                      alt="фото ростущий бизнес"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
+                  <div class="card__layer">
+                    <p class="card__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="card__poster">
+                  <h2 lang="en" class="card__name">Growing Business</h2>
+                  <p class="card__sphere">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <section class="footer-main footer-item">
+          <a class="logo footer-logo link" href="index.html" lang="en"
+            >Web<span class="logo-accent">Studio</span></a
+          >
+          <address>
+            <ul class="list">
+              <li class="footer__info">
+                <a
+                  class="map-link link"
+                  href="https://bit.ly/3pXMvUd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer__info">
+                <a
+                  class="footer__contacts link"
+                  href="mailto:info@devstudio.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="footer__contacts link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </section>
+        <div class="footer-soc">
+          <p class="footer-soc__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="footer-soc__list list">
+            <li class="footer-soc__item">
+              <a href="" class="footer-soc__link link">
+                <svg class="footer-soc__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc__item">
+              <a href="" class="footer-soc__link link">
+                <svg class="footer-soc__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc__item">
+              <a href="" class="footer-soc__link link">
+                <svg class="footer-soc__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc__item">
+              <a href="" class="footer-soc__link link">
+                <svg class="footer-soc__icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="foter-form">
+          <p class="foter-form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <form class="foter-form__input">
+            <input
+              type="email"
+              class="foter-form__email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="foter-form__btn">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
