@@ -20,9 +20,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
-  background-color: var(--white-accent);
+  width: 450px;
+  height: 609px;
+  background: var(--white-accent);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -33,6 +33,10 @@
   z-index: 1;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -139,6 +143,10 @@
   letter-spacing: 0.03em;
   margin-left: 14px;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    margin-left: 14px;
+  }
 }
 
 .checkbox-link {
