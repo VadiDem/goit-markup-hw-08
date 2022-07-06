@@ -8,7 +8,9 @@
 
 .work__img {
   display: flex;
-  width: calc((100% - 60px) / 3);
+  flex-wrap: wrap;
+  margin-top: 50px;
+  // width: calc((100% - 60px) / 3);
 }
 
 .work__item {

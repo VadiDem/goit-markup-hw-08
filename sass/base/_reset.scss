@@ -1,26 +1,40 @@
-p,
+.flex {
+  display: flex;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul {
   margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
 
 body {
   background-color: var(--white-accent);
@@ -32,16 +46,4 @@ body {
 
 .pointer {
   cursor: pointer;
-}
-
-img {
-  display: block;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
